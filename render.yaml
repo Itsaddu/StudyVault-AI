@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: studyvault-ai-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm run start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: CLIENT_URL
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-1.5-flash
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_BASE_URL
+        value: https://openrouter.ai/api/v1
+      - key: OPENROUTER_DEFAULT_MODEL
+        value: openai/gpt-oss-120b
+      - key: DEFAULT_AI_PROVIDER
+        value: auto
+      - key: AI_FALLBACK_CHAIN
+        value: gemini,openai,openrouter
+      - key: AI_PROVIDER_TIMEOUT_MS
+        value: 45000
+      - key: MAX_UPLOAD_SIZE_MB
+        value: 10
+      - key: UPLOAD_DIR
+        value: uploads

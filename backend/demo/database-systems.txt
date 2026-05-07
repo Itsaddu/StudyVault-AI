@@ -1,0 +1,24 @@
+Database Systems Notes
+
+A relational database stores data in tables made of rows and columns.
+Normalization reduces redundancy and improves data integrity by organizing
+attributes into related tables.
+
+Primary keys uniquely identify each record. Foreign keys enforce relationships
+between tables. SQL is used to define, query, and manipulate structured data.
+
+Transactions follow ACID properties:
+- Atomicity
+- Consistency
+- Isolation
+- Durability
+
+Indexes improve query performance by reducing the amount of data scanned,
+but they increase storage costs and can slow write operations.
+
+Exam focus:
+- Differences between 1NF, 2NF, and 3NF
+- ACID properties with examples
+- Index tradeoffs
+- Joins and relationship types
+

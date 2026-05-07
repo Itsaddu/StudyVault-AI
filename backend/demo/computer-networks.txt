@@ -1,0 +1,22 @@
+Computer Networks Quick Revision
+
+The OSI model divides networking responsibilities into seven conceptual layers:
+physical, data link, network, transport, session, presentation, and application.
+TCP/IP is the practical Internet protocol suite and maps loosely to these layers.
+
+Routers forward packets between networks using IP addresses and routing tables.
+Switches operate mainly at Layer 2 and forward frames using MAC addresses.
+
+TCP provides reliable, connection-oriented communication using acknowledgements,
+sequence numbers, retransmission, and flow control. UDP is connectionless and
+favours low latency over reliability.
+
+HTTP is a stateless application-layer protocol used for web communication.
+HTTPS combines HTTP with TLS to provide encryption, integrity, and authentication.
+
+Common exam topics:
+- Compare TCP and UDP.
+- Explain subnetting and CIDR notation.
+- Describe congestion control.
+- Differentiate routing and switching.
+

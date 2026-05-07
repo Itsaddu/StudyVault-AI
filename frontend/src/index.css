@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 30%),
+      linear-gradient(180deg, #020617 0%, #0f172a 100%);
+    color: #e2e8f0;
+    font-family:
+      "Sora",
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.25);
+    color: #f8fafc;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/10 bg-white/5 shadow-[0_24px_70px_rgba(2,6,23,0.28)] backdrop-blur-xl;
+  }
+
+  .section-heading {
+    @apply text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300;
+  }
+
+  .surface-card {
+    @apply rounded-[1.75rem] border border-white/10 bg-slate-950/55 shadow-[0_20px_60px_rgba(2,6,23,0.24)] transition duration-300;
+  }
+
+  .interactive-surface {
+    @apply transition duration-300 hover:-translate-y-0.5 hover:border-white/20;
+  }
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.8);
+  border-radius: 999px;
+}

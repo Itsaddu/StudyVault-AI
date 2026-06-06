@@ -120,7 +120,7 @@ export default function RegisterPage() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-500 focus:bg-white"
-                  placeholder="Adwaith Nair"
+                  placeholder="Adwaith J S"
                 />
                 {errors.name ? <p className="mt-2 text-sm text-rose-600">{errors.name}</p> : null}
               </div>
